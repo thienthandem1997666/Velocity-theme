@@ -1,0 +1,110 @@
+@media (max-width: 767px)
+	html,body
+		min-width: 400px
+		.navbar
+			.container
+				align-items: start
+				button.navbar-toggler
+					display: block
+				.collapse
+					display: none
+					&.show
+						display: block
+						background-color: #253340
+						.navbar-nav
+							padding: 10px 0px
+							.nav-item
+								padding: 10px 20px!important
+					.navbar-nav
+						padding: 10px 0px
+						.nav-item
+							padding: 10px 20px!important
+				.collapsing
+					background-color: #253340
+					.navbar-nav
+						padding: 10px 0px
+						.nav-item
+							padding: 10px 20px!important
+
+		.banner			
+			.banner-layer
+				.container
+					.banner-title
+						font-size: 32px
+						font-weight: 700
+						margin-top: 130px
+						margin-bottom: 20px
+		.people
+			.container
+				.carousel-inner
+					.carousel-item,.carousel-item.active
+						.slide-item
+							.slide-profile
+								top: 0px
+								left: 50%
+								transform: translate(-50%,0)
+							.slide-info
+								margin-left: 0px
+								padding-top: 160px
+@media (min-width: 768px) and (max-width: 991px)
+	.navbar.navbar-light
+		.container
+			button
+				display: none
+			.collapse.navbar-collapse
+				display: inline
+				margin: auto
+				.navbar-nav
+					flex-direction: row
+					justify-content: center
+	.banner
+		height: 580px
+					
+	
+
+@media (min-width: 992px)
+	.navbar.navbar-light.navbar-scroll
+		background-color: white
+		border-bottom: 1px solid rgba(0,0,0,0.25)
+	.navbar.navbar-light
+		position: fixed
+		top: 0px
+		left: 0px
+		width: 100%
+		z-index: 999
+		.container
+			justify-content: space-between
+			.logo-wrap
+				margin-top: -20px
+				margin: 0px
+			.navbar-collapse
+				width: 600px
+				margin: 0px
+				flex-grow: 0
+			.collapse
+				.navbar-nav
+					.nav-item.nav-item-scroll
+									.nav-link
+										color: #414141
+										&:hover
+											color: rgba(65,65,65,0.5)
+					.nav-item.nav-item-scroll.active .nav-link
+						font-weight: 700
+					.nav-item.nav-item-scroll.nav-item.last
+						.nav-link
+							color: white
+							background-color: $bg-color
+					.logo-wrap.logo-wrap-scroll
+						background:
+							color: white
+						margin-top: 0px
+						.navbar-brand
+							color: $bg-color
+	.showcase
+		.container
+			.row
+				&:nth-child(2)
+					.information
+						order: 2
+					.show-pics
+						order: 1
